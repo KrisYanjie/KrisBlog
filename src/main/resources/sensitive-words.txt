@@ -1,0 +1,24 @@
+drop
+DROP
+Delete
+DELETE
+delete
+truncate
+TRUNCATE
+SELECT
+select
+insert
+INSERT
+where
+WHERE
+blog
+BLOG
+database
+DATABASE
+flushdb
+120.25.223.132
+124.222.64.235
+docker
+cd root
+log
+password
