@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 import static com.yj.login.constant.CommonConst.FALSE;
 
 /** 用户登录信息
- * @author: 古丶野
+ * @author: kris
  * @version: 1.0
  * @create: 2022-07-05 15:21
  **/
