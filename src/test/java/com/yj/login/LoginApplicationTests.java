@@ -3,12 +3,10 @@ package com.yj.login;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.yj.login.dto.MenuDTO;
 import com.yj.login.entity.Menu;
 import com.yj.login.mapper.MenuMapper;
 import com.yj.login.service.MenuService;
-import com.yj.login.service.impl.MenuServiceImpl;
 import com.yj.login.utils.BeanCopyUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +17,7 @@ import java.util.stream.Collectors;
 
 @SpringBootTest
 public class LoginApplicationTests {
+
 
 
     @Autowired
@@ -117,6 +116,37 @@ public class LoginApplicationTests {
                 .sorted(Comparator.comparing(Menu::getOrderNum))
                 .collect(Collectors.toList());
     }
+
+    @Test
+    void search(){
+        int[] arr=new int[6];
+        arr[0]=0;
+        arr[1]=3;
+        arr[2]=6;
+        arr[3]=1;
+        arr[4]=5;
+        System.out.println(arr[binanrySearch(arr,5)]);
+    }
+
+    private int binanrySearch(int[]arr, int key){
+        //定义最小索引值
+        int low=0;
+        //定义最大索引值
+        int high= arr.length;
+        while (low<high){
+            int mid= (int) Math.floor((low+high)/2);
+            if (key==arr[mid]){
+                return mid;
+            }
+            if (key>arr[mid]){
+                low=mid+1;
+            }if (key<arr[mid]){
+                high=mid-1;
+            }
+        }
+        return -1;
+    }
+
 
 
 }

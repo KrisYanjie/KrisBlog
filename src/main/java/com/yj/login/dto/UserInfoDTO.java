@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * 用户信息dto
  *
- * @author: 古丶野
+ * @author: kris
  * @version: 1.0
  * @create: 2022-07-05 15:19
  **/
