@@ -4,11 +4,16 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.yj.login.entity.Menu;
 import org.mapstruct.Mapper;
+import org.springframework.stereotype.Repository;
 
 
 import java.util.List;
-
-@Mapper
+/**
+ * @author kris
+ * @version 1.0
+ * @date 2022/7/23 0:09
+ */
+@Repository
 public interface MenuMapper extends BaseMapper<Menu> {
     /**
      * 根据用户id查询菜单

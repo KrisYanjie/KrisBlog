@@ -5,7 +5,7 @@ import com.yj.login.entity.UserInfo;
 import org.springframework.stereotype.Repository;
 
 /**
- * @author: 古丶野
+ * @author: kris
  * @version: 1.0
  * @create: 2022-07-05 16:31
  **/
