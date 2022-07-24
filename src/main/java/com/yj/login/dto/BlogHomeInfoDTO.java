@@ -16,5 +16,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BlogHomeInfoDTO {
-
+/**
+ * 文章数量
+ */
+private Integer articleCount;
 }
